@@ -4,12 +4,20 @@
 
 <body>
   <h1>Welcome to Alicia's TMS!</h1>
-
+    {{> loginButtons}}
+  {{#if currentUser}}
+      {{> shipment_form}}
+      {{> provider_list}}
+  {{else}}
+      <p>You must be logged-in to see this content.</p>
+  {{/if}}
   {{> shipment_form}}
   {{> provider_list}}
 </body>
 
 <template name="shipment_form">
+    <h2>You have made {{shipment_count}} shipments, you're on a roll!</h2>
+
     {{#autoForm collection="Shipments" id="insert_shipment_form" type="insert" resetOnSuccess=true}}
         <fieldset>
             <legend>Create A Shipment</legend>
