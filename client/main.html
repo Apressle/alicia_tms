@@ -10,7 +10,27 @@
 </body>
 
 <template name="shipment_form">
-    {{> quickForm collection="Shipments" id="insert_shipment_form" type="insert" resetOnSuccess=true }}
+    {{#autoForm collection="Shipments" id="insert_shipment_form" type="insert" resetOnSuccess=true}}
+        <fieldset>
+            <legend>Create A Shipment</legend>
+            {{> afQuickField name='client_name'}}
+            {{> afQuickField name='pickup_address_name'}}
+            {{> afQuickField name='pickup_address_street_1'}}
+            {{> afQuickField name='pickup_address_street_2'}}
+            {{> afQuickField name='pickup_address_city'}}
+            {{> afQuickField name='pickup_address_state'}}
+            {{> afQuickField name='pickup_address_zip'}}
+            {{> afQuickField name='destination_address_name'}}
+            {{> afQuickField name='destination_address_street_1'}}
+            {{> afQuickField name='destination_address_street_2'}}
+            {{> afQuickField name='destination_address_city'}}
+            {{> afQuickField name='destination_address_state'}}
+            {{> afQuickField name='destination_address_zip'}}
+            {{> afQuickField name='ship_date'}}
+            {{> afQuickField name='total_weight'}}
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Submit and View Rate Quotes!</button>
+    {{/autoForm}}
 </template>
 
 <!--<template name="info">-->

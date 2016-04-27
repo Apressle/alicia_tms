@@ -1,5 +1,13 @@
 Shipments = new Mongo.Collection("shipments");
 Shipments.attachSchema(new SimpleSchema({
+    client_name: {
+        type: String,
+        label: 'Client Name',
+    },
+    pickup_address_name: {
+        type: String,
+        label: 'Pickup Address Name/ Company',
+    },
     pickup_address_street_1: {
         type: String,
         label: 'Pickup Address Street 1',
@@ -84,6 +92,10 @@ Shipments.attachSchema(new SimpleSchema({
     pickup_address_zip: {
         type: String,
         label: 'Pickup Zip Code',
+    },
+    destination_address_name: {
+        type: String,
+        label: 'Destination Address Name/ Company',
     },
     destination_address_street_1: {
         type: String,
