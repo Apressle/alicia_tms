@@ -1,5 +1,9 @@
 Shipments = new Mongo.Collection("shipments");
 Shipments.attachSchema(new SimpleSchema({
+    createdBy:{
+      type: String,
+      value: Meteor.userId()
+    },
     client_name: {
         type: String,
         label: 'Client Name',
