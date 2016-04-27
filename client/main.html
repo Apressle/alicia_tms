@@ -1,0 +1,24 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+  <h1>Welcome to Alicia's TMS!</h1>
+
+  {{> shipment_form}}
+  <!--{{> info}}-->
+</body>
+
+<template name="shipment_form">
+    {{> quickForm collection="Shipments" id="insert_shipment_form" type="insert" resetOnSuccess=true }}
+</template>
+
+<!--<template name="info">-->
+  <!--<h2>Learn Meteor!</h2>-->
+  <!--<ul>-->
+    <!--<li><a href="https://www.meteor.com/try">Do the Tutorial</a></li>-->
+    <!--<li><a href="http://guide.meteor.com">Follow the Guide</a></li>-->
+    <!--<li><a href="https://docs.meteor.com">Read the Docs</a></li>-->
+    <!--<li><a href="https://forums.meteor.com">Discussions</a></li>-->
+  <!--</ul>-->
+<!--</template>-->
