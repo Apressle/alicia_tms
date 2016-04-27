@@ -6,7 +6,7 @@
   <h1>Welcome to Alicia's TMS!</h1>
 
   {{> shipment_form}}
-  <!--{{> info}}-->
+  {{> provider_list}}
 </body>
 
 <template name="shipment_form">
@@ -33,12 +33,13 @@
     {{/autoForm}}
 </template>
 
-<!--<template name="info">-->
-  <!--<h2>Learn Meteor!</h2>-->
-  <!--<ul>-->
+<template name="provider_list">
+    <h2>Available Providers for your Shipment</h2>
+
+    <!--<ul>-->
     <!--<li><a href="https://www.meteor.com/try">Do the Tutorial</a></li>-->
     <!--<li><a href="http://guide.meteor.com">Follow the Guide</a></li>-->
     <!--<li><a href="https://docs.meteor.com">Read the Docs</a></li>-->
     <!--<li><a href="https://forums.meteor.com">Discussions</a></li>-->
   <!--</ul>-->
-<!--</template>-->
+</template>
