@@ -2,7 +2,7 @@ Shipments = new Mongo.Collection("shipments");
 Shipments.attachSchema(new SimpleSchema({
     createdBy:{
       type: String,
-      value: Meteor.userId()
+      optional: true
     },
     client_name: {
         type: String,
@@ -15,6 +15,7 @@ Shipments.attachSchema(new SimpleSchema({
     pickup_address_street_1: {
         type: String,
         label: 'Pickup Address Street 1',
+        optional: true
     },
     pickup_address_street_2: {
         type: String,
@@ -102,7 +103,8 @@ Shipments.attachSchema(new SimpleSchema({
     },
     destination_address_street_1: {
         type: String,
-        label: 'Destination Address Street 1'
+        label: 'Destination Address Street 1',
+        optional: true
     },
     destination_address_street_2: {
         type: String,
