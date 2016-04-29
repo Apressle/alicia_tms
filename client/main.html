@@ -41,11 +41,9 @@
 
 <template name="provider_list">
     <h2>Available Providers for your Shipment</h2>
-
-    <!--<ul>-->
-    <!--<li><a href="https://www.meteor.com/try">Do the Tutorial</a></li>-->
-    <!--<li><a href="http://guide.meteor.com">Follow the Guide</a></li>-->
-    <!--<li><a href="https://docs.meteor.com">Read the Docs</a></li>-->
-    <!--<li><a href="https://forums.meteor.com">Discussions</a></li>-->
-  <!--</ul>-->
+    <div class="posts">
+        {{#each provider}}
+            {{provider.name}} <br>
+        {{/each}}
+    </div>
 </template>

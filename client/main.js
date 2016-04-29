@@ -24,6 +24,6 @@ Template.shipment_form.events({
     }
 });
 
-Template.provider_list.onRendered = function(){
+Template.provider_list.onCreated = function(){
     Providers.find().fetch();
 };
