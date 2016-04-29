@@ -1,5 +1,5 @@
 Providers = new Mongo.Collection("providers");
-Shipments.attachSchema(new SimpleSchema({
+Providers.attachSchema(new SimpleSchema({
     name: {
         type: String,
         label: "Provider Name"

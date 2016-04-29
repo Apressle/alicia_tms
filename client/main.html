@@ -13,37 +13,11 @@
   {{/if}}
 </body>
 
-<template name="shipment_form">
-    <h2>You have made {{shipment_count}} shipments, you're on a roll!</h2>
-
-    {{#autoForm collection="Shipments" id="insert_shipment_form" type="insert" resetOnSuccess=true}}
-        <fieldset>
-            <legend>Create A Shipment</legend>
-            {{> afQuickField name='client_name'}}
-            {{> afQuickField name='pickup_address_name'}}
-            {{> afQuickField name='pickup_address_street_1'}}
-            {{> afQuickField name='pickup_address_street_2'}}
-            {{> afQuickField name='pickup_address_city'}}
-            {{> afQuickField name='pickup_address_state' type="select" options="allowed"}}
-            {{> afQuickField name='pickup_address_zip'}}
-            {{> afQuickField name='destination_address_name'}}
-            {{> afQuickField name='destination_address_street_1'}}
-            {{> afQuickField name='destination_address_street_2'}}
-            {{> afQuickField name='destination_address_city'}}
-            {{> afQuickField name='destination_address_state'}}
-            {{> afQuickField name='destination_address_zip'}}
-            {{> afQuickField name='ship_date'}}
-            {{> afQuickField name='total_weight'}}
-        </fieldset>
-        <button type="submit" class="btn btn-primary">Submit and View Rate Quotes!</button>
-    {{/autoForm}}
-</template>
-
 <template name="provider_list">
     <h2>Available Providers for your Shipment</h2>
     <div class="posts">
         {{#each provider}}
-            {{provider.name}} <br>
+            {{name}} <br>
         {{/each}}
     </div>
 </template>
