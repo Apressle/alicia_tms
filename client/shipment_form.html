@@ -1,5 +1,5 @@
 <template name="shipment_form">
-    <h2>You have made {{shipment_count}} shipments, you're on a roll!</h2>
+    <h2> {{shipment_count}} shipments have been made through us, and counting!</h2>
 
     {{#autoForm collection="Shipments" id="insert_shipment_form" type="insert" resetOnSuccess=true}}
         <fieldset>
@@ -22,4 +22,5 @@
         </fieldset>
         <button type="submit" class="btn btn-primary">Submit and View Rate Quotes!</button>
     {{/autoForm}}
+    {{> sAlert}}
 </template>

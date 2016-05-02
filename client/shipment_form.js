@@ -4,7 +4,10 @@ Template.shipment_form.onRendered
 Template.shipment_form.helpers({
     'shipment_count': function(){
         var currentUserId = Meteor.userId();
-        return Shipments.find().count()
+        console.log("current user " + currentUserId);
+        var number = Shipments.find({}).count()
+        //var number = Shipments.find({createdBy: currentUserId}).count()
+        return number
     }
 });
 
@@ -17,6 +20,7 @@ Template.shipment_form.events({
         console.log("createdby " + autoform_generated_document_object.createdBy)
         Session.set('shipment_ready', autoform_generated_document_object);
         Session.get('shipment_ready');
+        sAlert.success("Your shipment has been submitted! Your providers will be available next.");
         var ready = Session.get('shipment_ready')
         return console.log(ready);
     }
