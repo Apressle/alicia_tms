@@ -1,6 +1,6 @@
 <template name="shipment_form">
     <h2> {{shipment_count}} shipments have been made through us, and counting!</h2>
-
+    <button type="demo" class="btn btn-primary">Demo Shipment</button>
     {{#autoForm collection="Shipments" id="insert_shipment_form" type="insert" resetOnSuccess=true}}
         <fieldset>
             <legend>Create A Shipment</legend>
@@ -21,6 +21,9 @@
             {{> afQuickField name='total_weight'}}
         </fieldset>
         <button type="submit" class="btn btn-primary">Submit and View Rate Quotes!</button>
+
+    {{/autoForm}}
+    {{#autoForm id="afUpdateDemo" type="update" doc=someDoc collection="Shipments"}}
     {{/autoForm}}
     {{> sAlert}}
 </template>
