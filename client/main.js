@@ -24,6 +24,6 @@ Template.provider_list.events({
         var latest_shipment = Shipments.find({}, {sort:{_id:-1}}, {limit:1});
         //var latest_shipment_id = latest_shipment._id
         //Shipments.update({_id:latest_shipment._id}, {provider_id: provider_id})
-        //console.log("latest shipment = "+ latest_shipment_id);
+        //console.log("latest shipment = " + latest_shipment_id);
     }
 });
