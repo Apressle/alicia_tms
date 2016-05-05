@@ -195,6 +195,10 @@ Shipments.attachSchema(new SimpleSchema({
         type: Number,
         label: 'Total Weight of Shipment'
     },
+    ship_method: {
+        type: String,
+        label: "Shipping Method"
+    },
     provider_id: {
         type: String,
         optional: true

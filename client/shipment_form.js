@@ -1,5 +1,6 @@
 Template.shipment_form.onRendered
     Meteor.subscribe("shipments");
+    Session.set('demo_shipment', false);
 
 Template.shipment_form.helpers({
     'shipment_count': function(){
@@ -8,6 +9,11 @@ Template.shipment_form.helpers({
         var number = Shipments.find({}).count()
         //var number = Shipments.find({createdBy: currentUserId}).count()
         return number
+    },
+    'demo': function(){
+        Session.get('demo_shipment');
+        var demo = Session.get('demo_shipment')
+        return console.log(demo);
     }
 });
 
@@ -24,8 +30,10 @@ Template.shipment_form.events({
         var ready = Session.get('shipment_ready')
         return console.log(ready);
     },
-    'demo': function(event){
-        autoform_inserted_doc_object = AutoForm.get
-
+    'onClick #demo_button': function(event){
+        Session.set('demo_shipment', true);
+        console.log("clicked");
+          $(main).hide();
+          $(demo).show();
     }
 });

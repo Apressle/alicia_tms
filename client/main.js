@@ -1,3 +1,31 @@
+Meteor.startup(function() {
+    GoogleMaps.load();
+});
+
+Template.body.onCreated(function() {
+    // We can use the `ready` callback to interact with the map API once the map is ready.
+    GoogleMaps.ready('exampleMap', function(map) {
+        // Add a marker to the map once it's ready
+        var marker = new google.maps.Marker({
+            position: map.options.center,
+            map: map.instance
+        });
+    });
+});
+
+Template.body.helpers({
+    exampleMapOptions: function() {
+        // Make sure the maps API has loaded
+        if (GoogleMaps.loaded()) {
+            // Map initialization options
+            return {
+                center: new google.maps.LatLng(43.0541673,-89.4911041),
+                zoom: 7
+            };
+        }
+    }
+});
+
 Template.provider_list.onRendered = function(){
     Meteor.subscribe("providers")
     Meteor.subscribe("shipments")
@@ -26,4 +54,5 @@ Template.provider_list.events({
         //Shipments.update({_id:latest_shipment._id}, {provider_id: provider_id})
         //console.log("latest shipment = " + latest_shipment_id);
     }
+
 });

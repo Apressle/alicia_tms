@@ -6,7 +6,7 @@ Meteor.methods({
         die_roll = Math.floor(Math.random() * 7);
         switch (die_roll) {
             case 0:
-                origin_address = {
+                shipment = {
                     pickup_address_name: "Jason Swanson",
                     client_name: "ClearView Supply Chain",
                     pickup_address_street_1: "6417 Odana Rd.",

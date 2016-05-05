@@ -206,9 +206,9 @@
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/bootstrap3-horizontal.css" />
         <item url="file://$USER_HOME$/.meteor/packages/htmljs/1.0.9/web.browser/preamble.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/inputTypes/select-radio/select-radio.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/htmljs/1.0.9/web.browser/visitors.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/components/autoForm/autoForm.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-password/1.1.8/web.browser/password_tests_setup.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/htmljs/1.0.9/web.browser/visitors.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/inputTypes/boolean-radios/boolean-radios.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-password/1.1.8/web.browser/email_tests.js" />
         <item url="file://$USER_HOME$/.meteor/packages/htmljs/1.0.9/web.browser/html.js" />
@@ -223,6 +223,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/accounts-ui-unstyled/1.1.12/web.browser/accounts_ui.js" />
         <item url="file://$USER_HOME$/.meteor/packages/launch-screen/1.0.11/web.browser/mobile-launch-screen.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-ui-unstyled/1.1.12/web.browser/login_buttons_dropdown.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/dburles_google-maps/1.1.5/web.browser/google-maps.js" />
         <item url="file://$USER_HOME$/.meteor/packages/jquery/1.11.8/web.browser/jquery.js" />
         <item url="file://$USER_HOME$/.meteor/packages/es5-shim/4.5.10/web.browser/server.js" />
         <item url="file://$USER_HOME$/.meteor/packages/es5-shim/4.5.10/web.browser/console.js" />
@@ -475,9 +476,9 @@
       <root url="file://$USER_HOME$/.meteor/packages/htmljs/1.0.9/web.browser/preamble.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/bootstrap3-horizontal.css" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/inputTypes/select-radio/select-radio.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/htmljs/1.0.9/web.browser/visitors.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-password/1.1.8/web.browser/password_tests_setup.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/components/autoForm/autoForm.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/htmljs/1.0.9/web.browser/visitors.js" />
       <root url="file://$USER_HOME$/.meteor/packages/htmljs/1.0.9/web.browser/html.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-password/1.1.8/web.browser/email_tests.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/inputTypes/boolean-radios/boolean-radios.js" />
@@ -492,6 +493,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/accounts-ui-unstyled/1.1.12/web.browser/accounts_ui.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-ui-unstyled/1.1.12/web.browser/login_buttons_dropdown.js" />
       <root url="file://$USER_HOME$/.meteor/packages/launch-screen/1.0.11/web.browser/mobile-launch-screen.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/dburles_google-maps/1.1.5/web.browser/google-maps.js" />
       <root url="file://$USER_HOME$/.meteor/packages/jquery/1.11.8/web.browser/jquery.js" />
       <root url="file://$USER_HOME$/.meteor/packages/es5-shim/4.5.10/web.browser/server.js" />
       <root url="file://$USER_HOME$/.meteor/packages/es5-shim/4.5.10/web.browser/console.js" />
