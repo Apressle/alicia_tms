@@ -1,6 +1,6 @@
 Providers = new Mongo.Collection("providers");
 Providers.attachSchema(new SimpleSchema({
-    name: {
+    provider_name: {
         type: String,
         label: "Provider Name"
     }

@@ -1,0 +1,17 @@
+<template name="provider_page">
+    <h2>Available Providers for your Shipment</h2>
+    <div class="posts">
+        {{#each provider}}
+            <li class="provider_listed {{selected}}">{{name}}<br></li>
+        {{/each}}
+    </div>
+    Add New Provider:
+    <!--{{> quickForm id="add_provider" collection=Providers}}-->
+    {{#autoForm collection="Providers" id="insert_provider_form" type="insert" resetOnSuccess=true}}
+    <fieldset>
+        {{> afQuickField name='provider_name'}}
+
+    </fieldset>
+    {{/autoForm}}
+<a class="navbar-brand" href="{{pathFor 'home'}}">back</a>
+    </template>

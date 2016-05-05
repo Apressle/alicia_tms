@@ -26,3 +26,6 @@ accounts-password
 accounts-ui
 juliancwirko:s-alert
 dburles:google-maps
+iron:router
+twbs:bootstrap
+fortawesome:fontawesome

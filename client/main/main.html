@@ -1,0 +1,39 @@
+<head>
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ship With ATMS</title>
+</head>
+<template name="home">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope</a>-->
+        </div>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav">
+                <!--<li><a href="{{pathFor 'postSubmit'}}">Submit Post</a></li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {{> loginButtons}}
+            </ul>
+        </div>
+    </nav>
+
+  <h1><i class="fa fa-home"></i>Welcome to Alicia's TMS!</h1>
+    <!--{{> loginButtons}}-->
+    {{#if currentUser}}
+
+        {{> shipment_form}}
+
+    {{else}}
+        <p>You must be logged-in to see this content.</p>
+    {{/if}}
+    <div class="map-container">
+        {{> googleMap name="home_map" options=exampleMapOptions}}
+    </div>
+
+</template>
