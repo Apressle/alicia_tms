@@ -1,43 +1,8 @@
 <template name="shipment_form">
     <h2> {{shipment_count}} shipments have been made through us, and counting!</h2>
     <button type="button" id="demo_button" class="btn btn-primary">Demo Shipment</button>
-    <!--{{#unless demo}}-->
-        <!--<div id="demo">-->
-        <!--{{#autoForm id="insert_shipment_form" type="update" doc=someDoc collection="Shipments"}}-->
-            <!--<fieldset>-->
-                <!--<legend>Create A Shipment</legend>-->
-                <!--{{> afQuickField name='client_name'}}-->
-                <!--<div class="btn-group" data-toggle="buttons">-->
-                    <!--<label class="btn btn-primary active">-->
-                        <!--<input type="radio" name="ship_method" id="option1" autocomplete="off" checked> Parcel-->
-                    <!--</label>-->
-                    <!--<label class="btn btn-primary">-->
-                        <!--<input type="radio" name="ship_method" id="option2" autocomplete="off"> LTL-->
-                    <!--</label>-->
-                    <!--<label class="btn btn-primary">-->
-                        <!--<input type="radio" name="ship_method" id="option3" autocomplete="off"> Truckload-->
-                    <!--</label>-->
-                <!--</div>-->
-                <!--{{> afQuickField name='pickup_address_name'}}-->
-                <!--{{> afQuickField name='pickup_address_street_1'}}-->
-                <!--{{> afQuickField name='pickup_address_street_2'}}-->
-                <!--{{> afQuickField name='pickup_address_city'}}-->
-                <!--{{> afQuickField name='pickup_address_state' type="select" options="allowed"}}-->
-                <!--{{> afQuickField name='pickup_address_zip'}}-->
-                <!--{{> afQuickField name='destination_address_name'}}-->
-                <!--{{> afQuickField name='destination_address_street_1'}}-->
-                <!--{{> afQuickField name='destination_address_street_2'}}-->
-                <!--{{> afQuickField name='destination_address_city'}}-->
-                <!--{{> afQuickField name='destination_address_state'}}-->
-                <!--{{> afQuickField name='destination_address_zip'}}-->
-                <!--{{> afQuickField name='ship_date'}}-->
-                <!--{{> afQuickField name='total_weight'}}-->
-            <!--</fieldset>-->
-            <!--<button type="submit" class="btn btn-primary">Submit and View Rate Quotes!</button>-->
-        <!--{{/autoForm}}-->
-    <!--</div>-->
+
 <div id="main">
-    <!--{{else}}-->
         {{#autoForm collection="Shipments" id="insert_shipment_form" type="insert" resetOnSuccess=true}}
             <fieldset>
                 <legend>Create A Shipment</legend>
@@ -70,6 +35,5 @@
             </fieldset>
             <button type="submit" class="btn btn-primary">Submit and View Rate Quotes!</button>
         {{/autoForm}}</div>
-    <!--{{/unless}}-->
     {{> sAlert}}
 </template>
