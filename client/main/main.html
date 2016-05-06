@@ -3,6 +3,7 @@
     <title>Ship With ATMS</title>
 </head>
 <template name="home">
+    <div class="col-md-12">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
@@ -23,17 +24,24 @@
         </div>
     </nav>
 
-  <h1><i class="fa fa-home"></i>Welcome to Alicia's TMS!</h1>
-    <!--{{> loginButtons}}-->
-    {{#if currentUser}}
-
-        {{> shipment_form}}
-
-    {{else}}
+  <h1><i class="fa fa-truck" aria-hidden="true"></i>
+      <i class="fa fa-truck" aria-hidden="true"></i>
+      <i class="fa fa-truck" aria-hidden="true"></i>Welcome to Alicia's TMS!
+      <i class="fa fa-truck" aria-hidden="true"></i>
+      <i class="fa fa-truck" aria-hidden="true"></i>
+      <i class="fa fa-truck" aria-hidden="true"></i>
+  </h1>
+  <div class="col-md-6">
+      {{#if currentUser}}
+         {{> shipment_form}}
+      {{else}}
         <p>You must be logged-in to see this content.</p>
-    {{/if}}
-    <div class="map-container">
+      {{/if}}
+  </div>
+  <div class="col-md-6">
+      <div class="map-container">
         {{> googleMap name="home_map" options=exampleMapOptions}}
+      </div>
+  </div>
     </div>
-
 </template>

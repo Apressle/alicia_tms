@@ -13,7 +13,6 @@ Meteor.methods({
                     pickup_address_street_2: "Suite #6",
                     pickup_address_city: "Madison",
                     pickup_address_state: "WI",
-                    country: "US",
                     pickup_address_zip: "53719",
                     destination_address_name: "Brad Hollister",
                     destination_address_street_1: "702 S Randall Ave",
@@ -23,27 +22,36 @@ Meteor.methods({
                 };
                 break;
             case 1:
-                origin_address = {
-
-                    company: "Henry Vilas Zoo",
-
-                    country: "US",
-                    phone: "(608) 258-9490",
-                    email: "henryvilaszoo@clearviewaudit.com",
+                shipment = {
+                    pickup_address_name: "Jason Swanson",
+                    client_name: "ClearView Supply Chain",
+                    pickup_address_street_1: "6417 Odana Rd.",
+                    pickup_address_street_2: "Suite #6",
+                    pickup_address_city: "Madison",
+                    pickup_address_state: "WI",
+                    pickup_address_zip: "53719",
+                    destination_address_name: "Brad Hollister",
+                    destination_address_street_1: "702 S Randall Ave",
+                    destination_address_city: "Madison",
+                    destination_address_state: "WI",
+                    destination_address_zip: "53715"
 
                 };
                 break;
             case 2:
-                origin_address = {
-                    name: "Buckingham Badger",
-                    company: "Camp Randall Stadium",
-                    street1: "1440 Monroe St",
-                    city: "Madison",
-                    state: "WI",
-                    country: "US",
-                    phone: "(608) 262-1866",
-                    email: "camprandall@clearviewaudit.com",
-                    zip: "53711"
+                shipment = {
+                    pickup_address_name: "Jason Swanson",
+                    client_name: "ClearView Supply Chain",
+                    pickup_address_street_1: "6417 Odana Rd.",
+                    pickup_address_street_2: "Suite #6",
+                    pickup_address_city: "Madison",
+                    pickup_address_state: "WI",
+                    pickup_address_zip: "53719",
+                    destination_address_name: "Brad Hollister",
+                    destination_address_street_1: "702 S Randall Ave",
+                    destination_address_city: "Madison",
+                    destination_address_state: "WI",
+                    destination_address_zip: "53715"
                 };
                 break;
             case 3:
@@ -103,7 +111,7 @@ Meteor.methods({
                     name: "Jason Swanson",
                     company: "ClearView Supply Chain",
                     street1: "6417 Odana Rd.",
-                    steet2: "Suite #6",
+                    street2: "Suite #6",
                     city: "Madison",
                     state: "WI",
                     country: "US",
@@ -112,5 +120,8 @@ Meteor.methods({
                     zip: "53719"
                 };
         }
+    },
+    shipment_insert: function(shipment){
+        check(this.userId, String)
     }
 });

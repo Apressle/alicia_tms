@@ -15,6 +15,10 @@ Template.provider_page.helpers({
         if(provider_id == selected_provider){
             return "selected"
         }
+    },
+    'shipment': function(){
+        Shipments.find({}, {sort:{created_on:-1}});
+        return Shipments.findOne({});
     }
 });
 Template.provider_page.events({

@@ -23,6 +23,7 @@ Template.shipment_form.events({
         autoform_generated_document_object = AutoForm.getFormValues('insert_shipment_form').insertDoc
         //autoform_generated_document_object.provider_id = {}
         autoform_generated_document_object.createdBy = Meteor.userId();
+        autoform_generated_document_object.created_on = new Date();
         console.log("createdBy " + autoform_generated_document_object.createdBy);
         Session.set('shipment_ready', autoform_generated_document_object);
         Session.get('shipment_ready');
@@ -34,6 +35,7 @@ Template.shipment_form.events({
     'click #demo_button': function(event){
         Session.set('demo_shipment', true);
         console.log("clicked");
+        Meteor.call('demo_shipment_insert', Meteor.userId());
         Router.go('/provider_listing');
           //$('#main').hide();
           //$('#demo').show();

@@ -4,6 +4,10 @@ Shipments.attachSchema(new SimpleSchema({
       type: String,
       optional: true
     },
+    created_date:{
+      type: Date,
+      optional: true
+    },
     client_name: {
         type: String,
         label: 'Client Name',
