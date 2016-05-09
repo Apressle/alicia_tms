@@ -18,6 +18,7 @@
                         <input type="radio" name="ship_method" id="option3" autocomplete="off"> Truckload
                     </label>
                 </div>
+                {{> afQuickField name=""}}
                 {{> afQuickField name='pickup_address_name'}}
                 {{> afQuickField name='pickup_address_street_1'}}
                 {{> afQuickField name='pickup_address_street_2'}}
@@ -28,7 +29,7 @@
                 {{> afQuickField name='destination_address_street_1'}}
                 {{> afQuickField name='destination_address_street_2'}}
                 {{> afQuickField name='destination_address_city'}}
-                {{> afQuickField name='destination_address_state'}}
+                {{> afQuickField name='destination_address_state' type="select" options="allowed"}}
                 {{> afQuickField name='destination_address_zip'}}
                 {{> afQuickField name='ship_date'}}
                 {{> afQuickField name='total_weight'}}

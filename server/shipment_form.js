@@ -43,17 +43,16 @@ Meteor.methods({
                 shipment = {
                     pickup_address_name: "Jason Swanson",
                     client_name: "ClearView Supply Chain",
-                    pickup_address_street_1: "6417 Odana Rd.",
+                    pickup_address_street_1: "2 E Main St",
                     pickup_address_street_2: "Suite #6",
                     pickup_address_city: "Madison",
                     pickup_address_state: "WI",
-                    pickup_address_zip: "53719",
+                    pickup_address_zip: "53703",
                     destination_address_name: "Brad Hollister",
                     destination_address_street_1: "702 S Randall Ave",
                     destination_address_city: "Madison",
                     destination_address_state: "WI",
                     destination_address_zip: "53715"
-
                 };
                 break;
             case 2:

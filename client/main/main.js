@@ -23,5 +23,32 @@ Template.home.helpers({
                 zoom: 7
             };
         }
+    },
+    shipmentCountChart: function() {
+        var user = Meteor.users.findOne()
+        var user_email = user.emails[0].address
+        return {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: user_email + "'s Shipments 2015-2016",
+            },
+            xAxis: {
+                categories: [ 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr']
+            },
+            plotOptions: {
+                series: {
+                    allowPointSelect: true
+                }
+            },
+            series: [{
+                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+            }]
+        };
     }
+
 });
+

@@ -1,12 +1,12 @@
 Shipments = new Mongo.Collection("shipments");
 Shipments.attachSchema(new SimpleSchema({
-    createdBy:{
-      type: String,
-      optional: true
+    createdBy: {
+        type: String,
+        optional: true
     },
-    created_date:{
-      type: Date,
-      optional: true
+    created_date: {
+        type: Date,
+        optional: true
     },
     client_name: {
         type: String,
@@ -33,7 +33,7 @@ Shipments.attachSchema(new SimpleSchema({
     pickup_address_state: {
         type: String,
         label: "Pickup State",
-        allowedValues: ['AK',"AL","AR","AS","AZ","CA","CO","CT","DC","DE","FL","FM","GA","GU","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MH","MI","MN","MO","MP","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VA","VI","VT","WA","WI","WV", 'WY'],
+        allowedValues: ['AK', "AL", "AR", "AS", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "FM", "GA", "GU", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MH", "MI", "MN", "MO", "MP", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VI", "VT", "WA", "WI", "WV", 'WY'],
         autoform: {
             options: [
                 {label: "AK", value: "AK"},
@@ -122,67 +122,67 @@ Shipments.attachSchema(new SimpleSchema({
     destination_address_state: {
         type: String,
         label: "Destination State",
-        allowedValues: ['AK',"AL","AR","AS","AZ","CA","CO","CT","DC","DE","FL","FM","GA","GU","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MH","MI","MN","MO","MP","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VA","VI","VT","WA","WI","WV", 'WY'],
+        allowedValues: ['AK', "AL", "AR", "AS", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "FM", "GA", "GU", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MH", "MI", "MN", "MO", "MP", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VI", "VT", "WA", "WI", "WV", 'WY'],
         autoform: {
             options: [
-                    {label: "AK", value:"AK"},
-                    {label: "AL", value:"AL"},
-                    {label: "AR", value:"AR"},
-                    {label: "AS", value:"AS"},
-                    {label: "AZ", value:"AZ"},
-                    {label: "CA", value:"CA"},
-                    {label: "CO", value:"CO"},
-                    {label: "CT", value:"CT"},
-                    {label: "DC", value:"DC"},
-                    {label: "DE", value:"DE"},
-                    {label: "FL", value:"FL"},
-                    {label: "FM", value:"FM"},
-                    {label: "GA", value:"GA"},
-                    {label: "GU", value:"GU"},
-                    {label: "HI", value:"HI"},
-                    {label: "IA", value:"IA"},
-                    {label: "ID", value:"ID"},
-                    {label: "IL", value:"IL"},
-                    {label: "IN", value:"IN"},
-                    {label: "KS", value:"KS"},
-                    {label: "KY", value:"KY"},
-                    {label: "LA", value:"LA"},
-                    {label: "MA", value:"MA"},
-                    {label: "MD", value:"MD"},
-                    {label: "ME", value:"ME"},
-                    {label: "MH", value:"MH"},
-                    {label: "MI", value:"MI"},
-                    {label: "MN", value:"MN"},
-                    {label: "MO", value:"MO"},
-                    {label: "MP", value:"MP"},
-                    {label: "MS", value:"MS"},
-                    {label: "MT", value:"MT"},
-                    {label: "NC", value:"NC"},
-                    {label: "ND", value:"ND"},
-                    {label: "NE", value:"NE"},
-                    {label: "NH", value:"NH"},
-                    {label: "NJ", value:"NJ"},
-                    {label: "NM", value:"NM"},
-                    {label: "NV", value:"NV"},
-                    {label: "NY", value:"NY"},
-                    {label: "OH", value:"OH"},
-                    {label: "OK", value:"OK"},
-                    {label: "OR", value:"OR"},
-                    {label: "PA", value:"PA"},
-                    {label: "PR", value:"PR"},
-                    {label: "RI", value:"RI"},
-                    {label: "SC", value:"SC"},
-                    {label: "SD", value:"SD"},
-                    {label: "TN", value:"TN"},
-                    {label: "TX", value:"TX"},
-                    {label: "UT", value:"UT"},
-                    {label: "VA", value:"VA"},
-                    {label: "VI", value:"VI"},
-                    {label: "VT", value:"VT"},
-                    {label: "WA", value:"WA"},
-                    {label: "WI", value:"WI"},
-                    {label: "WV", value:"WV"},
-                    {label: "WY", value:"WY"}
+                {label: "AK", value: "AK"},
+                {label: "AL", value: "AL"},
+                {label: "AR", value: "AR"},
+                {label: "AS", value: "AS"},
+                {label: "AZ", value: "AZ"},
+                {label: "CA", value: "CA"},
+                {label: "CO", value: "CO"},
+                {label: "CT", value: "CT"},
+                {label: "DC", value: "DC"},
+                {label: "DE", value: "DE"},
+                {label: "FL", value: "FL"},
+                {label: "FM", value: "FM"},
+                {label: "GA", value: "GA"},
+                {label: "GU", value: "GU"},
+                {label: "HI", value: "HI"},
+                {label: "IA", value: "IA"},
+                {label: "ID", value: "ID"},
+                {label: "IL", value: "IL"},
+                {label: "IN", value: "IN"},
+                {label: "KS", value: "KS"},
+                {label: "KY", value: "KY"},
+                {label: "LA", value: "LA"},
+                {label: "MA", value: "MA"},
+                {label: "MD", value: "MD"},
+                {label: "ME", value: "ME"},
+                {label: "MH", value: "MH"},
+                {label: "MI", value: "MI"},
+                {label: "MN", value: "MN"},
+                {label: "MO", value: "MO"},
+                {label: "MP", value: "MP"},
+                {label: "MS", value: "MS"},
+                {label: "MT", value: "MT"},
+                {label: "NC", value: "NC"},
+                {label: "ND", value: "ND"},
+                {label: "NE", value: "NE"},
+                {label: "NH", value: "NH"},
+                {label: "NJ", value: "NJ"},
+                {label: "NM", value: "NM"},
+                {label: "NV", value: "NV"},
+                {label: "NY", value: "NY"},
+                {label: "OH", value: "OH"},
+                {label: "OK", value: "OK"},
+                {label: "OR", value: "OR"},
+                {label: "PA", value: "PA"},
+                {label: "PR", value: "PR"},
+                {label: "RI", value: "RI"},
+                {label: "SC", value: "SC"},
+                {label: "SD", value: "SD"},
+                {label: "TN", value: "TN"},
+                {label: "TX", value: "TX"},
+                {label: "UT", value: "UT"},
+                {label: "VA", value: "VA"},
+                {label: "VI", value: "VI"},
+                {label: "VT", value: "VT"},
+                {label: "WA", value: "WA"},
+                {label: "WI", value: "WI"},
+                {label: "WV", value: "WV"},
+                {label: "WY", value: "WY"}
             ]
         }
     },
@@ -195,16 +195,28 @@ Shipments.attachSchema(new SimpleSchema({
         label: 'Date of Shipping',
         optional: true
     },
-    total_weight:{
+    total_weight: {
         type: Number,
         label: 'Total Weight of Shipment'
     },
     ship_method: {
         type: String,
-        label: "Shipping Method"
+        label: "Shipping Method",
+        optional: true,
+        autoform: {
+            type: "select-radio",
+            options: function () {
+                return [
+                    {label: "Parcel", value: "Parcel"},
+                    {label: "LTL", value: "LTL"},
+                    {label: "Truckload", value: "Truckload"}
+                ];
+            }
+        }
     },
     provider_id: {
         type: String,
         optional: true
+
     }
 }));

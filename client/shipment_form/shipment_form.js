@@ -21,7 +21,7 @@ Template.shipment_form.events({
     'submit': function(event) {
         event.preventDefault();
         autoform_generated_document_object = AutoForm.getFormValues('insert_shipment_form').insertDoc
-        //autoform_generated_document_object.provider_id = {}
+        //autoform_generated_document_object.provider_id =
         autoform_generated_document_object.createdBy = Meteor.userId();
         autoform_generated_document_object.created_on = new Date();
         console.log("createdBy " + autoform_generated_document_object.createdBy);
