@@ -1,5 +1,9 @@
 Shipments = new Mongo.Collection("shipments");
 Shipments.attachSchema(new SimpleSchema({
+    _id:  {
+        type: String,
+        optional: true
+    },
     createdBy: {
         type: String,
         optional: true
@@ -207,9 +211,9 @@ Shipments.attachSchema(new SimpleSchema({
             type: "select-radio",
             options: function () {
                 return [
-                    {label: "Parcel", value: "Parcel"},
-                    {label: "LTL", value: "LTL"},
-                    {label: "Truckload", value: "Truckload"}
+                    {label: "Parcel",    value: "Parcel"    },
+                    {label: "LTL",       value: "LTL"       },
+                    {label: "Truckload", value: "Truckload" }
                 ];
             }
         }

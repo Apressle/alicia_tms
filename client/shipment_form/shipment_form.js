@@ -20,7 +20,7 @@ Template.shipment_form.helpers({
 Template.shipment_form.events({
     'submit': function(event) {
         event.preventDefault();
-        autoform_generated_document_object = AutoForm.getFormValues('insert_shipment_form').insertDoc
+        var autoform_generated_document_object = AutoForm.getFormValues('insert_shipment_form').insertDoc
         //autoform_generated_document_object.provider_id =
         autoform_generated_document_object.createdBy = Meteor.userId();
         autoform_generated_document_object.created_on = new Date();
@@ -28,16 +28,14 @@ Template.shipment_form.events({
         Session.set('shipment_ready', autoform_generated_document_object);
         Session.get('shipment_ready');
         sAlert.success("Your shipment has been submitted! Your providers will be available next.");
-        var ready = Session.get('shipment_ready')
-        Router.go('/provider_listing');
+        var ready = Session.get('shipment_ready');
+        Router.go('/provider_listing/:_id');
         return console.log(ready);
     },
     'click #demo_button': function(event){
         Session.set('demo_shipment', true);
         console.log("clicked");
         Meteor.call('demo_shipment_insert', Meteor.userId());
-        Router.go('/provider_listing');
-          //$('#main').hide();
-          //$('#demo').show();
+        Router.go('/provider_listing/:_id');
     }
 });

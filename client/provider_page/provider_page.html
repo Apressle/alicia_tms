@@ -1,20 +1,18 @@
 <template name="provider_page">
     <div class="col-md-12">
-    <div class="portlet">
-    <h2  class="page-header">Available Providers for your Shipment</h2>
-    <ul class="feeds">
-        {{#each provider}}
-            <li class=" nav-item provider_listed {{selected}}">{{name}}<br></li>
-        {{/each}}
-    </ul>
-    Add New Provider for shipment {{shipment._id}}:
-    {{#autoForm collection="Providers" id="insert_provider_form" type="insert" resetOnSuccess=true}}
-    <fieldset>
-        {{> afQuickField name='provider_name'}}
-
-    </fieldset>
-    {{/autoForm}}
-<a class="navbar-brand" href="{{pathFor 'home'}}">back</a>
-</div></div>
+        <div class="portlet">
+            <h2  class="page-header">Available Providers for your Shipment</h2>
+             <ul class="feeds">
+                {{#each provider}}
+                    <li class=" nav-item provider_listed {{selected}}">{{name}}<br></li>
+                {{/each}}
+            </ul>
+              Add New Provider for Shipment with {{shipment.client_name}}:
+             {{#autoForm collection="Providers" id="insert_provider_form" type="insert" resetOnSuccess=true}}
+             <fieldset>{{> afQuickField name='provider_name'}}</fieldset>
+             {{/autoForm}}
+             <a class="navbar-brand" href="{{pathFor 'home'}}">Back to Home</a>
+        </div>
+    </div>
 </template>
 

@@ -20,7 +20,12 @@ Meteor.methods({
            created_date: new Date()
        });
    },
-    random_new_shipment_generator: function(){
+    //Lists.find({}, {sort: {$natural:-1}, limit:1}).fetch()
+    'get_latest_shipment': function(){
+       return Shipments.find({}, {sort: {$natural:-1}, limit:1}).fetch()
+    },
+
+    'random_new_shipment_generator': function(){
         die_roll = Math.floor(Math.random() * 7);
         switch (die_roll) {
             case 0:

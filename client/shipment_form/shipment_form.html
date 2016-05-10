@@ -7,18 +7,7 @@
             <fieldset>
                 <legend>Create A Shipment</legend>
                 {{> afQuickField name='client_name'}}
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary active">
-                        <input type="radio" name="ship_method" id="option1" autocomplete="off" checked> Parcel
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="radio" name="ship_method" id="option2" autocomplete="off"> LTL
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="radio" name="ship_method" id="option3" autocomplete="off"> Truckload
-                    </label>
-                </div>
-                {{> afQuickField name=""}}
+                {{> afQuickField name="ship_method"}}
                 {{> afQuickField name='pickup_address_name'}}
                 {{> afQuickField name='pickup_address_street_1'}}
                 {{> afQuickField name='pickup_address_street_2'}}
