@@ -31,5 +31,13 @@ Template.provider_page.events({
         //var latest_shipment_id = latest_shipment._id
         //Shipments.update({_id:latest_shipment._id}, {provider_id: provider_id})
         //console.log("latest shipment = " + latest_shipment_id);
+    },
+    'click .delete': function(e) {
+        e.preventDefault();
+        if (confirm("Delete this post?")) {
+            var currentPostId = this._id;
+            Providers.remove(currentPostId);
+            //Router.go('postsList');
+        }
     }
 });

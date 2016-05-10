@@ -3,30 +3,25 @@
         <div class="page-content-wrapper">
             <div class="page-content">
                 <div class="col-md-12">
-                    <div class="portlet col-md-6">
                         <h2  class="page-header">Available Providers for your Shipment</h2>
                          <ul class="feeds">
                             {{#each provider}}
                                 <li class=" nav-item provider_listed {{selected}}">
                                     <a href="#" class="btn btn-default {{upvotedClass}}"><i class="fa fa-truck" aria-hidden="true"></i></a>
-                                    {{provider_name}}<br>
+                                    {{provider_name}} for rate {{provider_rate}} <a class="btn btn-danger delete" href="#">Remove</a>
                                 </li>
                             {{/each}}
                         </ul>
-
-                    </div>
-                    <!--<div class="col-md-6"></div>-->
-                        <div class="col-md-3"><h3 >Add New Provider for Shipment with {{shipment.client_name}}:</h3>
+                            <h3 >Add New Provider for Shipment with {{shipment.client_name}}:</h3>
                          {{#autoForm collection="Providers" id="insert_provider_form" type="insert" resetOnSuccess=true}}
-                         <fieldset>{{> afQuickField name='provider_name' }}</fieldset>
-                         {{/autoForm}}</div>
-
-                        <!--<div class="panel-footer">-->
+                         <fieldset>
+                             {{> afQuickField name='provider_name' template="bootstrap3-horizontal" label-class="col-md-2" input-col-class="col-md-4"}}
+                             {{> afQuickField name='provider_rate' template="bootstrap3-horizontal" label-class="col-md-2" input-col-class="col-md-4"}}
+                         </fieldset>
+                          <button type="submit" class="btn btn-primary">Add Provider Now</button>
+                         {{/autoForm}}
                          <a class="navbar-brand" href="{{pathFor 'home'}}">Back to Home</a>
-                        <!--</div>-->
-
-                </div>
-            </div>
+                </div></div>
         </div>
     </div>
 </template>

@@ -31,8 +31,14 @@ Template.shipment_form.events({
         var ready = Session.get('shipment_ready');
         var shipment_id= autoform_generated_document_object._id
         //var shipment_id= Shipments.find(_id:(Session.get('shipment_ready')))
-        Router.go('/provider_listing/:_id');
-        return console.log(ready);
+        //Router.go('/provider_listing/:_id');
+        //return console.log(ready);
+        if (error) {
+            // display the error to the user
+            throwError(error.reason);
+        } else {
+            Router.go('/provider_listing/:_id');
+        }
     },
     'click #demo_button': function(event){
         Session.set('demo_shipment', true);
