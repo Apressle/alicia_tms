@@ -4,7 +4,10 @@
             <h2  class="page-header">Available Providers for your Shipment</h2>
              <ul class="feeds">
                 {{#each provider}}
-                    <li class=" nav-item provider_listed {{selected}}">{{name}}<br></li>
+                    <li class=" nav-item provider_listed {{selected}}">
+                        <a href="#" class="upvote btn btn-default {{upvotedClass}}"><i class="fa fa-truck" aria-hidden="true"></i></a>
+                        {{name}}<br>
+                    </li>
                 {{/each}}
             </ul>
               Add New Provider for Shipment with {{shipment.client_name}}:
