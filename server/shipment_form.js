@@ -21,8 +21,9 @@ Meteor.methods({
        });
    },
     //Lists.find({}, {sort: {$natural:-1}, limit:1}).fetch()
-    'get_latest_shipment': function(){
-       return Shipments.find({}, {sort: {$natural:-1}, limit:1}).fetch()
+    'get_latest_shipment': function(shipment){
+       var shipment = Shipments.find({}, {sort: {$natural:-1}, limit:1}).fetch()
+       return shipment
     },
 
     'random_new_shipment_generator': function(){

@@ -1,20 +1,26 @@
 <template name="provider_page">
-    <div class="col-md-12">
-        <div class="portlet">
-            <h2  class="page-header">Available Providers for your Shipment</h2>
-             <ul class="feeds">
-                {{#each provider}}
-                    <li class=" nav-item provider_listed {{selected}}">
-                        <a href="#" class="upvote btn btn-default {{upvotedClass}}"><i class="fa fa-truck" aria-hidden="true"></i></a>
-                        {{name}}<br>
-                    </li>
-                {{/each}}
-            </ul>
-              Add New Provider for Shipment with {{shipment.client_name}}:
-             {{#autoForm collection="Providers" id="insert_provider_form" type="insert" resetOnSuccess=true}}
-             <fieldset>{{> afQuickField name='provider_name'}}</fieldset>
-             {{/autoForm}}
-             <a class="navbar-brand" href="{{pathFor 'home'}}">Back to Home</a>
+    <div class="page-container">
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <div class="col-md-12">
+                    <div class="portlet color-view blue-madison">
+                        <h2  class="page-header">Available Providers for your Shipment</h2>
+                         <ul class="feeds">
+                            {{#each provider}}
+                                <li class=" nav-item provider_listed {{selected}}">
+                                    <a href="#" class="btn btn-default {{upvotedClass}}"><i class="fa fa-truck" aria-hidden="true"></i></a>
+                                    {{name}}<br>
+                                </li>
+                            {{/each}}
+                        </ul>
+                          Add New Provider for Shipment with {{shipment.client_name}}:
+                         {{#autoForm collection="Providers" id="insert_provider_form" type="insert" resetOnSuccess=true}}
+                         <fieldset>{{> afQuickField name='provider_name'}}</fieldset>
+                         {{/autoForm}}
+                         <a class="navbar-brand" href="{{pathFor 'home'}}">Back to Home</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>

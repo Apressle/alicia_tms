@@ -29,6 +29,8 @@ Template.shipment_form.events({
         Session.get('shipment_ready');
         sAlert.success("Your shipment has been submitted! Your providers will be available next.");
         var ready = Session.get('shipment_ready');
+        var shipment_id= autoform_generated_document_object._id
+        //var shipment_id= Shipments.find(_id:(Session.get('shipment_ready')))
         Router.go('/provider_listing/:_id');
         return console.log(ready);
     },
