@@ -1,4 +1,9 @@
 <template name="layout">
-    <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
-    </ul>
+    <div class="container">
+        <!--{{> header}}-->
+        {{> errors}}
+        <div id="main">
+            {{> home}}
+        </div>
+    </div>
 </template>
