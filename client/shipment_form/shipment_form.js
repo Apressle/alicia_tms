@@ -1,12 +1,9 @@
-//var bodyParser = require('body-parser');
-//
-//app.use(bodyParser());
+Errors = new Mongo.Collection(null);
 
 Template.shipment_form.onRendered
     Meteor.subscribe("shipments");
     Session.set('demo_shipment', false);
 
-Errors = new Mongo.Collection(null);
 Template.shipment_form.helpers({
     'shipment_count': function(){
         var currentUserId = Meteor.userId();

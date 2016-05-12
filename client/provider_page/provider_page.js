@@ -1,5 +1,5 @@
 Template.provider_page.onRendered = function(){
-    //Meteor.subscribe("providers")
+    Meteor.subscribe("providers")
     Session.get('shipment_ready')
     var shipment_ready = Session.get('shipment_ready')
     console.log(shipment_ready + " is shipment_ready")
