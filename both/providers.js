@@ -1,4 +1,6 @@
 Providers = new Mongo.Collection("providers");
+
+
 Providers.attachSchema(new SimpleSchema({
     id: {
         type: String,

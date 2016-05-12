@@ -30,3 +30,4 @@ iron:router
 twbs:bootstrap
 fortawesome:fontawesome
 maazalik:highcharts
+meteorhacks:npm

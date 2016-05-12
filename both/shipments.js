@@ -1,4 +1,13 @@
 Shipments = new Mongo.Collection("shipments");
+
+Shipments.before.insert(function (userId, doc) {
+    doc.created_date = Date.now();
+    doc.provider_id = "Provider TBD";
+});
+Shipments.before.insert(function (userId, doc) {
+    doc.created_date = Date.now();
+});
+
 Shipments.attachSchema(new SimpleSchema({
     _id:  {
         type: String,
