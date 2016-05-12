@@ -2,8 +2,16 @@
   <library name="meteor-packages-auto-import-browser" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/remove.js" />
         <item url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.1.7/web.browser/reactive-dict-tests.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/collection-hooks.js" />
         <item url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.1.7/web.browser/reactive-dict.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/findone.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/users-compat.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/insert.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/update.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/upsert.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/find.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_controller/1.0.12/web.browser/lib/controller_client.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/autoform-arrays.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/form-preserve.js" />
@@ -113,7 +121,6 @@
         <item url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.11/web.browser/lib/iron_core.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/components/afFormGroup/afFormGroup.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3/inputTypes/select-checkbox-inline/select-checkbox-inline.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/meteorhacks_npm/1.5.0/web.browser/packages/meteorhacks_npm.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/components/afObjectField/afObjectField.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/components/quickForm/quickForm.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_simple-schema/1.1.0/web.browser/packages/aldeed:simple-schema.js" />
@@ -126,7 +133,6 @@
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/components/afArrayField/afArrayField.js" />
         <item url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert-default.css" />
         <item url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.10.6/web.browser/packages/momentjs_moment.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/meteorhacks_async/1.0.0/web.browser/packages/meteorhacks:async.js" />
         <item url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.8/web.browser/tokens.js" />
         <item url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.8/web.browser/preamble.js" />
         <item url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.8/web.browser/tojs.js" />
@@ -306,8 +312,16 @@
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/remove.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/collection-hooks.js" />
       <root url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.1.7/web.browser/reactive-dict-tests.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/findone.js" />
       <root url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.1.7/web.browser/reactive-dict.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/users-compat.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/insert.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/update.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/upsert.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/matb33_collection-hooks/0.8.1/web.browser/find.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/autoform-arrays.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_controller/1.0.12/web.browser/lib/controller_client.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/form-preserve.js" />
@@ -418,7 +432,6 @@
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/components/afFormGroup/afFormGroup.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3/inputTypes/select-checkbox-inline/select-checkbox-inline.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/components/afObjectField/afObjectField.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/meteorhacks_npm/1.5.0/web.browser/packages/meteorhacks_npm.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_simple-schema/1.1.0/web.browser/packages/aldeed:simple-schema.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/components/quickForm/quickForm.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3/inputTypes/select-checkbox-inline/select-checkbox-inline.css" />
@@ -430,7 +443,6 @@
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_autoform/5.8.1/web.browser/templates/bootstrap3-horizontal/components/afArrayField/afArrayField.js" />
       <root url="file://$USER_HOME$/.meteor/packages/juliancwirko_s-alert/3.1.4/web.browser/client/s-alert-default.css" />
       <root url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.10.6/web.browser/packages/momentjs_moment.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/meteorhacks_async/1.0.0/web.browser/packages/meteorhacks:async.js" />
       <root url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.8/web.browser/tokens.js" />
       <root url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.8/web.browser/preamble.js" />
       <root url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.8/web.browser/tojs.js" />

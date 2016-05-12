@@ -1,3 +1,7 @@
+//var bodyParser = require('body-parser');
+//
+//app.use(bodyParser());
+
 Template.shipment_form.onRendered
     Meteor.subscribe("shipments");
     Session.set('demo_shipment', false);

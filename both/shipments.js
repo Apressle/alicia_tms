@@ -1,18 +1,22 @@
 Shipments = new Mongo.Collection("shipments");
-
+Shipments.allow({
+    insert: function() {return true},
+    update: function() {return true},
+    remove: function() {return true}
+});
 Shipments.before.insert(function (userId, doc) {
     doc.created_date = Date.now();
     doc.provider_id = "Provider TBD";
 });
-Shipments.before.insert(function (userId, doc) {
-    doc.created_date = Date.now();
-});
+//Shipments.before.insert(function (userId, doc) {
+//    doc.created_date = Date.now();
+//});
 
 Shipments.attachSchema(new SimpleSchema({
-    _id:  {
-        type: String,
-        optional: true
-    },
+    //_id:  {
+    //    type: String,
+    //    optional: true
+    //},
     createdBy: {
         type: String,
         optional: true

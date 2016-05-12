@@ -1,3 +1,5 @@
+
+
 Meteor.startup(function() {
     GoogleMaps.load();
 });
@@ -26,7 +28,7 @@ Template.home.helpers({
     },
     shipmentCountChart: function() {
         var user = Meteor.users.findOne()
-        var user_email = user.emails[0].address;
+        var user_email = user.profile.username;
         return {
             chart: {
                 plotBackgroundColor: null,
